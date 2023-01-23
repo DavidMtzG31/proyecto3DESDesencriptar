@@ -1,0 +1,170 @@
+/* :root {
+
+} */
+
+
+/* box sizing */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Contenedor */
+.contenedor {
+  max-width: 120rem;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.botonesOpcionFlex {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.workZone {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  min-height: 100vh;
+}
+
+.drag-area {
+  border: 5px dashed rgb(22, 14, 14);
+  height: 200px;
+  width: 700px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.drag-area.active {
+  background-color: #b8d4fe;
+  color: black;
+  border: 2px dashed #618ac9;
+}
+
+.drag-area h2 {
+  font-size: 30px;
+  font-weight: 500;
+  color: #000;
+}
+
+.drag-area span {
+  font-size: 25px;
+  font-weight: 900;
+  color: #000;
+}
+
+.btnPrincipal {
+  padding: 15px 30px;
+  font-size: 20px;
+  border: 0;
+  outline: none;
+  background-color: #5256AD;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px 0;
+}
+
+.btnDescargaDenied {
+  padding: 15px 30px;
+  font-size: 20px;
+  border: 0;
+  background-color: #ca835a;
+  color: white;
+  border-radius: 5px;
+  margin: 20px 0;
+  cursor: not-allowed;
+}
+
+.file-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border: solid 1px #ddd;
+}
+
+.drag-area--encripta {
+  height: 700px;
+  align-items: unset;
+  justify-content: unset;
+}
+
+.drag-area--desencripta {
+  height: 400px;
+  align-items: unset;
+  justify-content: unset;
+}
+
+.encriptaFlex {
+  display: flex;
+  flex-direction: column;
+}
+
+.encriptaFlex textarea {
+  width: 100%;
+  height: 250px;
+}
+
+.botonesFlex{
+  display: flex;
+  justify-content: space-around;
+}
+
+#key {
+  width: 100%;
+}
+
+/* Validación */
+.validado {
+  color: rgb(12, 82, 3);
+}
+
+.error {
+  color: rgb(198, 8, 8);
+}
+
+.instrucciones h1 {
+  text-align: center;
+}
+
+.instrucciones p {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.active {
+  padding: 15px 30px;
+  font-size: 20px;
+  border: 0;
+  outline: none;
+  background-color: #76ad52;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px 0;
+}
+
+.active:hover,
+.inactive:hover {
+  background-color: #69e615
+}
+
+.inactive {
+  padding: 15px 30px;
+  font-size: 20px;
+  border: 0;
+  outline: none;
+  background-color: #333534;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px 0;
+}

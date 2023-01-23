@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Desencripta 3DES</title>
+</head>
+
+<body>
+
+  <div class="instrucciones contenedor">
+    <h1>Encriptador y Desencriptador con algoritmo 3DES</h1>
+    <p>Desencripta los arhivos.
+    <ol>
+      <li>Sube tu archivo txt obtenido previamente arrastrándolo o seleccionalo desde el explorador</li>
+      <li>Introduce la contraseña con la que fue encriptado</li>
+      <li>Presiona el botón de desencriptar</li>
+      <li>Si todo sale bien, se habilitará el botón para que descargues el archivo desencriptado en su formato
+        original</li>
+    </ol>
+    </p>
+  </div>
+
+  <div class="botonesOpcionFlex contenedor">
+    <div>
+      <a href="../index.html"><button class="inactive">Encriptar</button> </a>
+    </div>
+
+    <div>
+      <a href="./des.html"><button class="active">Desencriptar</button></a>
+    </div>
+  </div>
+
+  <div class="workZone">
+    <div class="drag-area">
+      <h2>Arrastra y suelta tu archivo</h2>
+      <span>O</span>
+      <button class="btnPrincipal">Selecciona tu archivo</button>
+      <input type="file" id="input-file" accept="text/plain" hidden />
+    </div>
+  </div>
+
+
+  <script type="module" src="main.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+
+</html>
